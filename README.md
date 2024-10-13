@@ -1,4 +1,4 @@
-# Where's Waldo: Diffusion Features For Personalized Segmentation and Retrieval
+# Where's Waldo: Diffusion Features For Personalized Segmentation and Retrieval (NeruIPS 2024)
 > Dvir Samuel, Rami Ben-Ari, Matan Levy, Nir Darshan, Gal Chechik    
 > Bar Ilan University, The Hebrew University of Jerusalem, NVIDIA Research
 
