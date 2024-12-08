@@ -39,8 +39,8 @@ python pdm_matching.py
 The PerMIR and PerMIS datasets were sourced from the [BURST](https://github.com/Ali2500/BURST-benchmark) repository. 
 
 ### Instructions:
-1. Download the datasets from the BURST repository.
-2. Run the script `PerMIRS/permirs_gen_dataset.py` to prepare the personalization datasets.
+1. Download the datasets from the BURST repository. Place train,val, and test sets in the same directory.
+2. Run the script `PerMIRS/permirs_gen_dataset.py` to prepare the personalization datasets. Ensure `--images_base_dir` contains the downloaded BURST splits. Additionally, set `--annotations_file` to all_classes.json.
 3. Execute `PerMIRS/extract_diff_features.py` to extract PDM and DIFT features from each image in the dataset.
 
 
