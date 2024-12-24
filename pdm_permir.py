@@ -140,15 +140,11 @@ if __name__ == "__main__":
             scores = []
             for g_idx in range(len(gallery_dift_features)):
                 # First, extract correspondences using DIFT
-                unfiltered_ref_points, unfiltered_tgt_points, cs_sim = get_correspondences_seg(query_dift_features[q_idx],
+                ref_points, tgt_points, dift_scores = get_correspondences_seg(query_dift_features[q_idx],
                                                                                                gallery_dift_features[g_idx],
                                                                                                query_dift_mask[q_idx],
                                                                                                img_size=attn_size,
                                                                                                topk=topk)
-                # for better matching, we use all corresponding points found by DIFT for retrieval
-                ref_points = unfiltered_ref_points
-                tgt_points = unfiltered_ref_points
-                dift_scores = cs_sim
 
                 total_maps_scores = []
                 total_maps_scores_cs = []
