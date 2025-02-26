@@ -64,7 +64,7 @@ if __name__ == "__main__":
 
     dataset_dir = "/PerMIRS"
 
-    if "red_data.pth" not in os.listdir(dataset_dir):
+    if "ret_data.pth" not in os.listdir(dataset_dir):
         # organize data for retrieval
         query_frames = []
         query_labels = []
